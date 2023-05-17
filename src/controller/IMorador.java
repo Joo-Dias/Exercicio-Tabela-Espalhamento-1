@@ -1,12 +1,12 @@
 package controller;
 
-import model.MoradorID;
+import model.Morador;
 
 public interface IMorador {
 	
-	public void adiciona(MoradorID dado) throws Exception;
-	public MoradorID busca(MoradorID dado) throws Exception;
-	public void remove(MoradorID dado) throws Exception;
-	// public void lista(String letra) throws Exception;
+	public void cadastrarMorador(Morador dado) throws Exception;
+	public Morador busca(Morador dado) throws Exception;
+	public void excluirMorador(Morador apartamento) throws Exception;
+	public void listarMorador(String andar) throws Exception;
 	
 }
